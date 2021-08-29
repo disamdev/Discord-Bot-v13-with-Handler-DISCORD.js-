@@ -1,3 +1,4 @@
 Algunas cosas que debes saber al hacer los comandos es que para enviar embeds en la v12 era message.channel.send(nombre del embed) y ahora es message.channel.send({embeds: [nombre del embed]})
+Los mensajes normales se envían igual que en la v12, message.channel.send('mensaje')
 
 También, para hacer menús y botones no hace falta tener instalado el npm discord-buttons, te recomendaría desinstalarlo porque puede tirarte algún error
