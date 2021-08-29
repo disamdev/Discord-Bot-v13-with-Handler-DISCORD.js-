@@ -4,7 +4,7 @@ const intents = new Discord.Intents(numero) // Aquí ponemos los intents del bot
 
 const client = new Discord.Client({ intents }) // Nombramos a lo que definimos arriba, los intents
 
-const fs = require('fs') // Invocamos al npm fs // Tendréis que instalarlo poniendo npm install fs
+const fs = require('fs') // Definimos al npm fs // Tendréis que instalarlo poniendo npm install fs
 
 //Handler//
 
