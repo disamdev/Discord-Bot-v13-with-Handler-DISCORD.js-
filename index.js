@@ -18,6 +18,6 @@ for (const file of commandFiles) { // Definimos que en la carpeta comandos ejecu
 const { readdirSync } = require('fs')
 }
 
-//PD: Si tienen algún error o problema contáctenme por Discord: ⚡Disam⚡#4234
-
 client.login("TOKEN") // Aquí debes poner tu token || Si estás en replit pon client.login(process.env.TOKEN) en esta línea si tienes guardado el token en los secrets, pero donde dice process.env.TOKEN, donde pone token pon el nombre que le tengas a tu secret, si es TOKEN, dejálo así
+
+//PD: Si tienen algún error o problema contáctenme por Discord: ⚡Disam⚡#4234
