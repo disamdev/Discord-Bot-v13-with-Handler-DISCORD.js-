@@ -4,6 +4,8 @@
 const { MessageEmbed } = require('discord.js'); /* Definimos el npm discord.js*/
 
 module.exports = async (client, message) => { /*Empezamos aquí el código*/
+    
+    let prefix = '' /*Pon aquí el prefijo de tu bot entre las ''*/
 
     if(message.channel.type === 'dm') return; /* Ponemos que si el comando nos lo manda al md no haga nada */
     if(message.author.bot) return; /*Hacemos que si el comando lo pone otro bot no haga nada*/
