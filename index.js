@@ -14,8 +14,18 @@ const commandFiles = fs.readdirSync('./comandos').filter(file => file.endsWith('
 for (const file of commandFiles) { // Definimos que en la carpeta comandos ejecute los comandos que haya
   const command = require(`./comandos/${file}`);
   client.commands.set(command.name, command);
+}
 
-const { readdirSync } = require('fs')
+const { readdirSync } = require('fs') /*Definimos el npm fs*/
+
+for(const file of readdirSync('./eventos')){
+    if(file.endsWith('.js')){
+        let fileName = file.substring(0, file.length - 3)
+        
+        let fileContents = require(`./eventos/${file}`)
+        
+        client.on(fileName, fileContents.bind(null, client))
+    }
 }
 
 client.login("TOKEN") // Aquí debes poner tu token || Si estás en replit pon client.login(process.env.TOKEN) en esta línea si tienes guardado el token en los secrets, pero donde dice process.env.TOKEN, donde pone token pon el nombre que le tengas a tu secret, si es TOKEN, dejálo así
